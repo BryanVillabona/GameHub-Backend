@@ -97,7 +97,7 @@ Puedes ingresar a la documentación de la API en el siguiente enlace:
 
 [▶️ **http://localhost:4000/api-docs**](http://localhost:4000/api-docs)
 
-**Nota: Debes tener ejecutando el backend `npm run dev` para poder visualizar la documentación**
+**Nota: Debes tener ejecutando el backend `npm run dev` para poder visualizar la ejecución de los ejemplos**
 
 **URL Base:** `http://localhost:4000/api/v1`
 

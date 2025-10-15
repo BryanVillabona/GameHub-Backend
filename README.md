@@ -66,7 +66,7 @@ Crea un archivo `.env` en la raíz del proyecto (adjunto hay un `.env.example`, 
 
 ```env
 MONGO_URI=mongodb://localhost:27017/ <--Cambialo por la URI de Mongo Atlas en caso de no tener activa replica set
-DB_NAME=tienda_videojuegos_db
+DB_NAME=gamehub_db
 PORT=4000
 HOST_NAME=localhost
 FRONTEND_URL=http://127.0.0.1:5500
@@ -86,8 +86,6 @@ npm run seed
 ```bash
 npm run dev
 ```
-
-El servidor estará escuchando en [http://localhost:4000](http://localhost:4000).
 
 ---
 

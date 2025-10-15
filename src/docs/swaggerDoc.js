@@ -1,3 +1,7 @@
+import 'dotenv/config';
+
+const RENDER_URL = process.env.RENDER_URL || `http://localhost:${process.env.PORT}`;
+
 export const swaggerDocument = {
   openapi: "3.0.0",
   info: {
@@ -7,8 +11,12 @@ export const swaggerDocument = {
   },
   servers: [
     {
-      url: "http://localhost:4000",
-      description: "Servidor local de desarrollo"
+      url: RENDER_URL,
+      description: "Servidor de Producción"
+    },
+    {
+      url: `http://localhost:${process.env.PORT}`,
+      description: "Servidor Local de Desarrollo"
     }
   ],
   paths: {

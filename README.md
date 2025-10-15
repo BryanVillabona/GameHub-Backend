@@ -65,13 +65,13 @@ npm install
 Crea un archivo `.env` en la raíz del proyecto (adjunto hay un `.env.example`, borra la extención .example de este y te queda el `.env`) y añade las siguientes variables:
 
 ```env
-MONGO_URI=mongodb://localhost:27017/
+MONGO_URI=mongodb://localhost:27017/ <--Cambialo por la URI de Mongo Atlas en caso de no tener activa replica set
 DB_NAME=tienda_videojuegos_db
 PORT=4000
 HOST_NAME=localhost
 FRONTEND_URL=http://127.0.0.1:5500
 ```
-Nota: Debes tener la replica set si lo quieres probar localmente, o en su defecto, usa MongoDB Atlas.
+Nota: Debes tener la replica set si lo quieres probar localmente, o en su defecto, usa la URI de MongoDB Atlas.
 
 ### 5️⃣ Poblar la Base de Datos (Opcional)
 
@@ -95,7 +95,9 @@ El servidor estará escuchando en [http://localhost:4000](http://localhost:4000)
 
 Puedes ingresar a la documentación de la API en el siguiente enlace:
 
-[▶️ **Ver Documentación**](https://ry3wzife42.apidog.io/)
+[▶️ **http://localhost:4000/api-docs**](http://localhost:4000/api-docs)
+
+**Nota: Debes tener ejecutando el backend `npm run dev` para poder visualizar la documentación**
 
 **URL Base:** `http://localhost:4000/api/v1`
 

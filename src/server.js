@@ -5,19 +5,23 @@ import { conectarBD } from "./config/db.js";
 import routerProductos from "./routers/productos.routes.js";
 import routerVentas from "./routers/ventas.routes.js";
 import routerAuth from './routers/auth.routes.js';
+import swaggerUI from 'swagger-ui-express';
+import { swaggerDocument } from "./docs/swaggerDoc.js";
 
 // Config
 const app = express();
 app.use(express.json());
 
 // Configuración de CORS
-const allowedOrigins = process.env.FRONTEND_URL.split(',');
 app.use(cors({
-    origin: allowedOrigins,
+    origin: process.env.FRONTEND_URL,
     methods: ["GET", "POST", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type"],
     credentials: false
 }));
+
+// RUTA PARA LA DOCUMENTACIÓN
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
 // Rutas
 const apiV1Router = express.Router();

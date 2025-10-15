@@ -11,8 +11,9 @@ const app = express();
 app.use(express.json());
 
 // Configuración de CORS
+const allowedOrigins = process.env.FRONTEND_URL.split(',');
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: allowedOrigins,
     methods: ["GET", "POST", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type"],
     credentials: false

@@ -424,7 +424,7 @@ El frontend de esta aplicación, desarrollado con **HTML**, **CSS** y **JavaScri
 
 En el siguiente video se explica el código y se muestra el funcionamiento completo de la aplicación, tanto del backend como del frontend.
 
-> ▶️ **Ver Video**
+> [▶️ **Ver Video**](https://drive.google.com/file/d/1zcSOgr41BGZFqQRF1RwRvJJt2gqEqXIV/view?usp=sharing)
 
 ---
 
